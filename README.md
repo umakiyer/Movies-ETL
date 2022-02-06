@@ -32,14 +32,14 @@ Wikipedia Columns List:
 ![image](IMAGES/wiki_movies_columns.PNG)
 
 ## ETL for the Kaggle metadata data : 
-* Loaded the dtaa into teh DataFrame.
-* Parsed the data on columns:adult,video,budget,id,popularity & release date. 
-* Merged the clean Wikipedia data & Kaggle data 
-* Filled the missing kaggle data from the wiki data
+* Loaded the data into the DataFrame.
+* Parsed the data on adult,video,budget,id,popularity & release date columns.
+* Merged the clean wWkipedia data & Kaggle data. 
+* Filled the missing Kaggle data from the Wikipedia data & named the new DataFrame as 'movie'.
 * Renamed the columns in the merged data.
 * Merged the rating data into the merged movie data.
 
-Movie dataframe :
+Movie DataFrame :
 ![images](IMAGES/del2_kaggle2.PNG)
 
 Movie data with Rating data merged
@@ -57,7 +57,7 @@ The movie  tables & the number of rows in the table:
 
 ![image](IMAGES/movies_table.PNG)
 
-* Created the rating tables in chunks as there were 260K rows.
+* Created the rating tables in chunks of 100,000 as there were 260K rows.
 
 ![image](IMAGES/creating_ratings_table.PNG)
 
