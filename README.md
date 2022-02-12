@@ -1,8 +1,8 @@
 # Movies-ETL 
 Created a movie database from multiple data sources.
-Extracted the data from multiple data sources. Transformed multiple data using RegEX( dropping/merging the columns) & created DataFrame. Converted the DataFrame to create the movie database. Loaded the movie database to pgAdmin. Wrote SQL query to verify the movie database.
+Extracted the data from multiple data sources. Transformed multiple data using RegEX( dropping/merging the columns) & created DataFrame. Converted the DataFrame to create the movie database. Loaded the movie database to pgAdmin. Wrote SQL query to verify the movie & rating tables in the database.
 
-## ETL function to read the data:    
+## ETL function to read three data files:    
 
 * Created function to read the Wikipedia , kaggle data, rating data. 
 
@@ -18,7 +18,7 @@ Raw Ratings data :
 
 ![image](IMAGES/del1_ratings.PNG)
 
-## ETL for the Wikipedia data :  
+## Extract and Transform the Wikipedia Data :  
 * Loaded & converted the json file to DataFrame.
 * By calling the clean_movie function, merged columns with of different languages to alternate title. Renamed the columns to appropiate headings.
 * Removed the TV shows from the data.
@@ -34,7 +34,7 @@ Wikipedia Columns List:
 
 ![image](IMAGES/wiki_movies_columns.PNG)
 
-## ETL for the Kaggle metadata data : 
+## Extract and Transform the Kaggle data : 
 * Loaded the data into the DataFrame.
 * Parsed the data on adult,video,budget,id,popularity & release date columns.
 * Merged the clean wWkipedia data & Kaggle data. 
@@ -50,9 +50,10 @@ Movie data with Rating data merged
 ![images](IMAGES/del2_kaggle1.PNG)
 
 ## Create Movie Database : 
-* Created the movie database in pgAdmin4.
+* Created the movie database(movie_db) in pgAdmin4.
 * Imported the dependency SQLACHEMY & psycopg2.
-* Created the movie table in pgAdmin.
+* Loaded the transformed data into movie database in pgAdmin4.
+* Wrote query to verify the database.
 
 The movie  tables & the number of rows in the table:
 
