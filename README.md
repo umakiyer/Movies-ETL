@@ -1,10 +1,10 @@
 # Movies-ETL 
 Created a movie database from multiple data sources.
-Extracted the data from multiple data sources. Transformed multiple data using RegEX( dropping/merging the columns) & created DataFrame. Converted the DataFrame to create the movie database. Loaded the movie database to pgAdmin. Wrote SQL query to verify the movie & rating tables in the database.
+Extracted the data from multiple data sources. Transformed multiple data using RegEX( dropping/merging columns) & created a DataFrame. Converted the DataFrame to create the movie database. Loaded the movie database to pgAdmin4. Wrote SQL query to verify the movie & rating tables in the database.
 
 ## ETL function to read three data files:    
 
-* Created function to read the Wikipedia , kaggle data, rating data. 
+* Wrote function to read the Wikipedia data ,kaggle data, and rating data. 
 
 Raw Wikipedia data :
 
@@ -20,11 +20,11 @@ Raw Ratings data :
 
 ## Extract and Transform the Wikipedia Data :  
 * Loaded & converted the json file to DataFrame.
-* By calling the clean_movie function, merged columns with of different languages to alternate title. Renamed the columns to appropiate headings.
-* Removed the TV shows from the data.
-* Created imbd_id & dropped the duplicate rows.
-* Parsed the box-office, budget, running time & release date column using regex.
-* After the ETL, the number of columns decreased to 23 from 193!
+* By calling the clean_movie function, merged columns of different languages to alternate title. Renamed the columns to appropiate headings.
+* Removed TV shows from the data.
+* Created imbd_id & dropped duplicate rows.
+* Parsed the box-office, budget, running time & release date column using RegEx.
+* After the ET, the number of columns decreased to 23 from 193!
 
 Cleaned Wikipedia Data :
 
@@ -36,7 +36,7 @@ Wikipedia Columns List:
 
 ## Extract and Transform the Kaggle data : 
 * Loaded the data into the DataFrame.
-* Parsed the data on adult,video,budget,id,popularity & release date columns.
+* Parsed the data on adult, video, budget, id, popularity & release date columns.
 * Merged the clean wWkipedia data & Kaggle data. 
 * Filled the missing Kaggle data from the Wikipedia data & named the new DataFrame as 'movie'.
 * Renamed the columns in the merged data.
