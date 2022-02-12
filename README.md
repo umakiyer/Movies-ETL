@@ -1,5 +1,6 @@
 # Movies-ETL 
-The purpose of this challenge to create ETL pipeline from raw data to SQL database. Extract the data using Python. Clean & transform the data using the DataFrame. Use regex to parse the data & load to PostgreSQL.
+Created a movie database from multiple data sources.
+Extracted the data from multiple data sources. Transformed multiple data using RegEX( dropping/merging the columns) & created DataFrame. Converted the DataFrame to create the movie database. Loaded the movie database to pgAdmin. Wrote SQL query to verify the movie database.
 
 ## ETL function to read the data:    
 
