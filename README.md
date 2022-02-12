@@ -1,14 +1,16 @@
 # Movies-ETL 
-The purpose of this challenge to create ETL pipeline from raw data to SQL database. Extract the data using Python. Clean & transform the dta using the DataFrame. Use regex to parse the data & load to PostgreSQL
+The purpose of this challenge to create ETL pipeline from raw data to SQL database. Extract the data using Python. Clean & transform the data using the DataFrame. Use regex to parse the data & load to PostgreSQL.
 
 ## ETL function to read the data:    
 
 * Created function to read the Wikipedia , kaggle data, rating data. 
 
 Raw Wikipedia data :
+
 ![image](IMAGES/del1_wiki.PNG)
 
 Raw Kaggle data :
+
 ![image](IMAGES/del1_kaggle.PNG)
 
 Raw Ratings data :
